@@ -58,6 +58,14 @@ namespace Binary_SearchTree_008
                 }
             }
         }
+        public void search(string element, ref Node parent, ref Node currentNode)
+        {
+            //this function searches the currentNode of the specified Node as well as the current Node of its parent
+            currentNode = ROOT;
+            parent = null;
+            
+        }
+        
     }
 
     internal class Program
