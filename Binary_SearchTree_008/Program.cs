@@ -35,7 +35,7 @@ namespace Binary_SearchTree_008
         {
             Node tmp, parent = null, currentNode = null;
             Search(element, ref parent, ref currentNode);
-            if (currentNode == null) // check if current node to be inserted already or not
+            if (currentNode != null) // check if current node to be inserted already or not
             {
                 Console.WriteLine("Duplicate words not allowed");
                 return;
