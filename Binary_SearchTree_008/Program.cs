@@ -63,7 +63,14 @@ namespace Binary_SearchTree_008
             //this function searches the currentNode of the specified Node as well as the current Node of its parent
             currentNode = ROOT;
             parent = null;
-            
+            while ((currentNode != null) && (currentNode.info != element))
+            {
+                parent = currentNode;
+                if (string.Compare(element, currentNode.info) < 0)
+                    currentNode = currentNode.lefchild;
+                else
+                    currentNode = currentNode.rightchild;
+            }
         }
         
     }
