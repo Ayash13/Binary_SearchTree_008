@@ -58,7 +58,7 @@ namespace Binary_SearchTree_008
                 }
             }
         }
-        public void search(string element, ref Node parent, ref Node currentNode)
+        public void Search(string element, ref Node parent, ref Node currentNode)
         {
             //this function searches the currentNode of the specified Node as well as the current Node of its parent
             currentNode = ROOT;
@@ -100,12 +100,22 @@ namespace Binary_SearchTree_008
                 preorder(ptr.rightchild);
             }
         }
+        public void postorder(Node ptr) //Perform the postorder traversal of the tree
+        {
+            if (ROOT == null)
+            {
+                Console.WriteLine("Tree is empty");
+                return;
+            }
+            if (ptr != null)
+            {
+                Console.WriteLine(ptr.info + "");
+                postorder(ptr.lefchild);
+                postorder(ptr.rightchild);
+            }
+        }
+       
     }
 
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-        }
-    }
+    
 }
