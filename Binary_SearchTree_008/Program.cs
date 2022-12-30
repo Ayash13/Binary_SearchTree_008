@@ -41,7 +41,22 @@ namespace Binary_SearchTree_008
                 return;
 
             }
-            
+            else //if the spesified node is not present
+            {
+                tmp = new Node(element, null, null); //crrate a node
+                if (parent == null) //if the tree is empty
+                {
+                    ROOT = tmp;
+                }
+                else if (string.Compare(element, parent.info) < 0)
+                {
+                    parent.lefchild = tmp;
+                }
+                else
+                {
+                    parent.rightchild = tmp;
+                }
+            }
         }
     }
 
