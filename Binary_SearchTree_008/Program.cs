@@ -34,6 +34,13 @@ namespace Binary_SearchTree_008
         public void insert(string element) //insert a node in the binary search tree
         {
             Node tmp, parent = null, currentNode = null;
+            Search(element, ref parent, ref currentNode);
+            if (currentNode == null) // check if current node to be inserted already or not
+            {
+                Console.WriteLine("Duplicate words not allowed");
+                return;
+
+            }
             
         }
     }
