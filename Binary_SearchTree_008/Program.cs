@@ -114,7 +114,11 @@ namespace Binary_SearchTree_008
                 postorder(ptr.rightchild);
             }
         }
-       
+        static void Main(string[] args)
+        {
+            BinaryTree x = new BinaryTree();
+           
+        }
     }
 
     
