@@ -109,9 +109,9 @@ namespace Binary_SearchTree_008
             }
             if (ptr != null)
             {
-                Console.WriteLine(ptr.info + "");
                 postorder(ptr.lefchild);
                 postorder(ptr.rightchild);
+                Console.WriteLine(ptr.info + "");
             }
         }
         static void Main(string[] args)
