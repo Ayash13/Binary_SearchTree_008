@@ -31,7 +31,11 @@ namespace Binary_SearchTree_008
             ROOT = null; //Initializing ROOT to null
 
         }
-        
+        public void insert(string element) //insert a node in the binary search tree
+        {
+            Node tmp, parent = null, currentNode = null;
+            
+        }
     }
 
     internal class Program
